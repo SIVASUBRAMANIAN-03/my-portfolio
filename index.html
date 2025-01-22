@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4faff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4caf50;
+            color: white;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 14px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        section img {
+            display: block;
+            margin: 0 auto;
+            border: 3px solid #4caf50;
+            border-radius: 50%;
+        }
+
+        section h2 {
+            color: #4caf50;
+        }
+
+        pre {
+            font-size: 1rem;
+            line-height: 1.5;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        a {
+            color: #4caf50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #4caf50;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="email"], input[type="date"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Portfolio</h1>
+    </header>
+
+    <section>
+        <center><img src="images/profile photo.png" width="200px" alt="Profile Photo"></center>
+    </section>
+
+    <section>
+        <h2>About Me</h2>
+        <pre>
+Hi there, I'm Sivasubramanian. I am an engineering student currently pursuing a 5-year integrated M.Tech 
+degree in Computer Science Engineering at Sri Krishna College of Engineering and Technology. 
+I am in my second year of studies with an average CGPA of 8.2.
+        </pre>
+    </section>
+
+    <section>
+        <h2>Connect with Me</h2>
+        <p><b>Instagram:</b> <a href="https://www.instagram.com/_sivasubramanian.k_/reels/" target="_blank">_sivasubramanian.k_</a></p>
+        <p><b>Email:</b> <a href="mailto:sivasubramanian135@gmail.com">sivasubramanian135@gmail.com</a></p>
+    </section>
+
+    <section>
+        <h2>My Projects</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>S.NO</th>
+                    <th>Projects</th>
+                    <th>Language</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Personal Portfolio</td>
+                    <td>HTML</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>SIP Calculator</td>
+                    <td>Java</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Contact Me</h2>
+        <form action="http://localhost/user_form/connect.php" method="post">
+            <label for="firstname">Name</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Firstname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="e.g., abc@gmail.com" required>
+
+            <label for="dob">DOB</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Gender</label>
+            <input type="radio" id="male" name="gender" value="m" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="f" required>
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="o" required>
+            <label for="other">Others</label>
+
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree to the terms and conditions</label>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 Sivasubramanian. All rights reserved.
+    </footer>
+</body>
+</html>
